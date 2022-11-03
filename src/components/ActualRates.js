@@ -15,16 +15,12 @@ function ActualRates(props){
         if(baseCurrency === "USD"){
             api.getConvertation(baseCurrency,[])
                 .then((res) => {
-                    console.log(res)
                     setRatesResponse(Object.entries(res.rates))
-                    console.log(ratesResponse)
                 }).catch(err => console.log(err));
         } else {
             api.getConvertation(baseCurrency,[])
                 .then((res) => {
-                    console.log(res)
                     setRatesResponse(Object.entries(res.rates))
-                    console.log(ratesResponse)
                 }).catch(err => console.log(err));
         }
     }
