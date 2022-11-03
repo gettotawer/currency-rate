@@ -12,4 +12,4 @@ function ResultPopup(props){
     )
 }
 
-export default ResultPopup
+export default ResultPopup;
